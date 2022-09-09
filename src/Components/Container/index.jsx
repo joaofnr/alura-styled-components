@@ -13,6 +13,9 @@ const Conteudo = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `
 
 const Main = () => {
@@ -20,6 +23,7 @@ const Main = () => {
     <Container>
       <Titulo>Olá John!</Titulo>
       <Conteudo>
+        <Conta />
         <Conta />
       </Conteudo>
     </Container>
