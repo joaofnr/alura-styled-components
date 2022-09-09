@@ -1,6 +1,9 @@
-import React from "react";
+import style from 'styled-components';
 
-const Titulo = ({ children }) => {
-  return <h1 className="titulo">{children}</h1>;
-};
+const Titulo = style.h1`{
+  
+    color: grey;
+    padding: 25px 0;
+  
+}`
 export default Titulo;
